@@ -2,9 +2,6 @@
 
 use Phalcon\Mvc\Controller;
 
-
-
-// login controller
 class ProductController extends Controller
 {
     public function indexAction()

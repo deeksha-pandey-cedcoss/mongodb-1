@@ -1,5 +1,5 @@
 <?php
-$id=$_GET['id'];
+$id = $_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,42 +15,53 @@ $id=$_GET['id'];
 <body>
     <h2>Add products using this form</h2>
     <?php
-    echo $this->tag->form(["product/edit/?id=".$id]);
+    echo $this->tag->form(["product/edit/?id=" . $id]);
     ?>
 
     <p>
         <label for="name">Name</label>
-        <?php echo $this->tag->textfield(["pname", "placeholder" => "Product name",
-         "class" => "form-control","value"=>$data['name']]); ?>
+        <?php echo $this->tag->textfield([
+            "pname", "placeholder" => "Product name",
+            "class" => "form-control", "value" => $data['name']
+        ]); ?>
     </p>
     <p>
         <label for="category">Category Name</label>
-        <?php echo $this->tag->textfield(["pcategory", "placeholder" => "Category name",
-         "class" => "form-control" ,"value"=>$data['category']]); ?>
+        <?php echo $this->tag->textfield([
+            "pcategory", "placeholder" => "Category name",
+            "class" => "form-control", "value" => $data['category']
+        ]); ?>
     </p>
     <p>
         <label for="price">Price</label>
-        <?php echo $this->tag->numericfield(["pprice", "placeholder" => "Price",
-         "class" => "form-control" ,"value"=>$data['price']]); ?>
+        <?php echo $this->tag->numericfield([
+            "pprice", "placeholder" => "Price",
+            "class" => "form-control", "value" => $data['price']
+        ]); ?>
     </p>
     <p>
         <label for="stock">Stock</label>
-        <?php echo $this->tag->numericfield(["pstock", "placeholder" => "Stock",
-         "class" => "form-control","value"=>$data['stock']]); ?>
+        <?php echo $this->tag->numericfield([
+            "pstock", "placeholder" => "Stock",
+            "class" => "form-control", "value" => $data['stock']
+        ]); ?>
     </p>
-    
+
     <label for="Variations">Variations for Price</label>
-        <?php echo $this->tag->numericfield(["price", "placeholder" => "Price",
-         "class" => "form-control col-2 ", "value"=>$data['attriprice']]); ?>
-        
+    <?php echo $this->tag->numericfield([
+        "price", "placeholder" => "Price",
+        "class" => "form-control col-2 ", "value" => $data['attriprice']
+    ]); ?>
+
     </p>
     <p>
-    <?php echo $this->tag->submitButton(["update", 'class' => 'btn btn-primary']); ?>
+        <?php echo $this->tag->submitButton(["update", 'class' => 'btn btn-primary']); ?>
     </p>
-    
+
     <p>
 
         </form>
 </body>
 
 </html>
+

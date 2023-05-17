@@ -7,8 +7,7 @@ use Phalcon\Mvc\Application;
 use Phalcon\Url;
 use Phalcon\Db\Adapter\Pdo\Mysql;
 use Phalcon\Config;
-use MongoDB\Client;
-// use Phalcon\Db\Adapter\Mongo\Client as MongoClient;
+
 
 $config = new Config([]);
 

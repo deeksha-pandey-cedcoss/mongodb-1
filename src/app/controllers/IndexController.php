@@ -2,7 +2,6 @@
 
 use Phalcon\Mvc\Controller;
 
-
 // defalut controller view
 class IndexController extends Controller
 {
